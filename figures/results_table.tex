@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Основные результаты (среднее $\pm$ std по 3 seed; accuracy в \%)}
+\label{tab:results}
+\begin{tabular}{lccrcc}
+\toprule
+\textbf{Вариант} & \textbf{Test acc} & \textbf{Dev acc} & \textbf{Trainable} & \textbf{\% от модели} & \textbf{Время, с} \\
+\midrule
+Head only (0\%) & 79{,}6 $\pm$ 0{,}6 & 79{,}7 $\pm$ 0{,}8 & 263\,682 & 0{,}64 & 29 \\
+LoRA last 25\% & 84{,}2 $\pm$ 0{,}7 & 83{,}6 $\pm$ 0{,}3 & 411\,138 & 0{,}99 & 38 \\
+LoRA last 50\% & 85{,}5 $\pm$ 0{,}6 & 84{,}2 $\pm$ 0{,}3 & 558\,594 & 1{,}35 & 45 \\
+LoRA last 75\% & 87{,}2 $\pm$ 0{,}6 & 86{,}0 $\pm$ 0{,}3 & 706\,050 & 1{,}71 & 57 \\
+LoRA 100\% & 87{,}4 $\pm$ 0{,}3 & 86{,}3 $\pm$ 0{,}6 & 853\,506 & 2{,}06 & 67 \\
+LoRA first 50\% & 86{,}4 $\pm$ 0{,}4 & 85{,}7 $\pm$ 0{,}1 & 558\,594 & 1{,}35 & 59 \\
+Full fine-tuning & 88{,}2 $\pm$ 0{,}3 & 86{,}5 $\pm$ 0{,}5 & 41\,374\,210 & 100{,}00 & 75 \\
+\bottomrule
+\end{tabular}
+\end{table}

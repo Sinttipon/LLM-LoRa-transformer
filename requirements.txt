@@ -1,0 +1,10 @@
+# версии контрольного прогона (CPU, Python 3.13.18). Основной прогон: Colab T4, torch 2.14.1+cu130, остальное то же
+torch==2.15.0
+transformers==5.24.1
+peft==0.22.0
+tokenizers==0.23.3
+safetensors==0.8.0
+accelerate==1.16.0
+numpy==2.5.3
+pandas==3.0.5
+matplotlib==3.11.2
